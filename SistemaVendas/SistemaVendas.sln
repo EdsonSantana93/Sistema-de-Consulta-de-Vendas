@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29926.136
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SistemaVendas", "SistemaVendas\SistemaVendas.csproj", "{54DD7BDD-E4F6-48BB-A90E-5B432B04DFCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SistemaVendas", "SistemaVendas\SistemaVendas.csproj", "{54DD7BDD-E4F6-48BB-A90E-5B432B04DFCD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{EAB9B715-9A89-49F4-92B0-93055567CA1E}"
+	ProjectSection(SolutionItems) = preProject
+		SistemaVendas\bin\Debug\netcoreapp2.1\SistemaVendas.dll = SistemaVendas\bin\Debug\netcoreapp2.1\SistemaVendas.dll
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -8,7 +8,7 @@ C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\Sistema
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\bin\Debug\netcoreapp2.1\SistemaVendas.pdb
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\bin\Debug\netcoreapp2.1\SistemaVendas.Views.dll
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\bin\Debug\netcoreapp2.1\SistemaVendas.Views.pdb
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csprojAssemblyReference.cache
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csproj.CoreCompileInputs.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.RazorAssemblyInfo.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.RazorAssemblyInfo.cs
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.AssemblyInfoInputs.cache
@@ -16,6 +16,11 @@ C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\Sistema
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.TagHelpers.input.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.TagHelpers.output.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.RazorCoreGenerate.cache
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Create.cshtml.g.cs
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Delete.cshtml.g.cs
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Details.cshtml.g.cs
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Edit.cshtml.g.cs
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Index.cshtml.g.cs
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Home\About.cshtml.g.cs
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Home\Contact.cshtml.g.cs
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Home\Index.cshtml.g.cs
@@ -33,9 +38,5 @@ C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\Sistema
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.pdb
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.genruntimeconfig.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csproj.CopyComplete
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Index.cshtml.g.cs
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Create.cshtml.g.cs
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Delete.cshtml.g.cs
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Details.cshtml.g.cs
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Departamentos\Edit.cshtml.g.cs
-C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csproj.CoreCompileInputs.cache
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csprojAssemblyReference.cache
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Index.cshtml.g.cs
