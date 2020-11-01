@@ -13,6 +13,7 @@ namespace SistemaVendas.Models
         public DateTime DataNascimento { get; set; }
         public double SalarioBase { get; set; }
         public Departamento Departamento { get; set; } //Associação um para um
+        public int DepartamentoId { get; set; } //Cria uma obrigatoriedade da Chave estrangeira não ser nula
         public ICollection<RegistroVendas> Vendas { get; set; } = new List<RegistroVendas>(); //Associação muitos para um 
 
         public Vendedor() { }
