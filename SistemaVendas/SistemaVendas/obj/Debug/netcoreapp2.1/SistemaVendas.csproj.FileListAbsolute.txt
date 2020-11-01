@@ -40,3 +40,4 @@ C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\Sistema
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csproj.CopyComplete
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\SistemaVendas.csprojAssemblyReference.cache
 C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Index.cshtml.g.cs
+C:\Users\Familia\Desktop\Sistema de Vendas\Sistema-de-Consulta-de-Vendas\SistemaVendas\SistemaVendas\obj\Debug\netcoreapp2.1\Razor\Views\Vendedores\Create.cshtml.g.cs
