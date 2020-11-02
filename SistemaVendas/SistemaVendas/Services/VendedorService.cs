@@ -23,7 +23,6 @@ namespace SistemaVendas.Services
         }
 
         public void InserirVendedor(Vendedor vendedor) {
-            vendedor.Departamento = _context.Departamento.First();
             _context.Add(vendedor);
             _context.SaveChanges();
         }
