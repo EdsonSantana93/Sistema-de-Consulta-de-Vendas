@@ -1,5 +1,4 @@
-﻿using AspNetCore;
-using SistemaVendas.Data;
+﻿using SistemaVendas.Data;
 using SistemaVendas.Models;
 using System;
 using System.Collections.Generic;

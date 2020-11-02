@@ -44,19 +44,30 @@ namespace SistemaVendas.Controllers
         }
 
         //Delete GET
-        [HttpDelete]
+        [HttpGet]
         public IActionResult Delete(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
+            
             var vendedor = _vendedorService.BuscarVendedorId(id.Value);
+            
             if (vendedor == null)
             {
                 return NotFound();
             }
             return View(vendedor);
+        }
+
+        //Delete Post
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Delete(int id)
+        {
+            _vendedorService.ExcluirVendedor(id);
+            return RedirectToAction(nameof(Index));
         }
     }
 }
