@@ -1,4 +1,5 @@
-﻿using SistemaVendas.Data;
+﻿using AspNetCore;
+using SistemaVendas.Data;
 using SistemaVendas.Models;
 using System;
 using System.Collections.Generic;
@@ -23,8 +24,18 @@ namespace SistemaVendas.Services
         }
 
         public void InserirVendedor(Vendedor vendedor) {
-            vendedor.Departamento = _context.Departamento.First();
             _context.Add(vendedor);
+            _context.SaveChanges();
+        }
+
+        public Vendedor BuscarVendedorId(int id) {
+            return _context.Vendedor.FirstOrDefault(vendedor => vendedor.Id == id);            
+        }
+
+        public void ExcluirVendedor(int id)
+        {
+            var vendedor = _context.Vendedor.Find(id);
+            _context.Remove(vendedor);
             _context.SaveChanges();
         }
     }

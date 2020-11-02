@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using SistemaVendas.Models;
+using SistemaVendas.Models.ViewModels;
 using SistemaVendas.Services;
 
 namespace SistemaVendas.Controllers
@@ -11,9 +12,11 @@ namespace SistemaVendas.Controllers
     public class VendedoresController : Controller
     {
         private readonly VendedorService _vendedorService;
-        public VendedoresController(VendedorService vendedorService)
+        private readonly DepartamentoService _departamentoService;
+        public VendedoresController(VendedorService vendedorService, DepartamentoService departamentoService)
         {
             _vendedorService = vendedorService;
+            _departamentoService = departamentoService;
         }
 
         public IActionResult Index()
@@ -26,7 +29,9 @@ namespace SistemaVendas.Controllers
         [HttpGet]
         public IActionResult Create()
         {
-            return View();
+            var departamentos = _departamentoService.BuscarDepartamentos();
+            var viewModel = new VendedorFormViewModel { Departamentos = departamentos };
+            return View(viewModel);
         }
 
         //Create POST
@@ -36,6 +41,22 @@ namespace SistemaVendas.Controllers
         {
             _vendedorService.InserirVendedor(vendedor);
             return RedirectToAction(nameof(Index));
+        }
+
+        //Delete GET
+        [HttpDelete]
+        public IActionResult Delete(int? id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var vendedor = _vendedorService.BuscarVendedorId(id.Value);
+            if (vendedor == null)
+            {
+                return NotFound();
+            }
+            return View(vendedor);
         }
     }
 }

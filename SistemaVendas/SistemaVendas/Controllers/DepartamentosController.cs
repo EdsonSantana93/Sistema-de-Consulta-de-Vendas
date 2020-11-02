@@ -7,6 +7,8 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using SistemaVendas.Data;
 using SistemaVendas.Models;
+using SistemaVendas.Models.ViewModels;
+using SistemaVendas.Services;
 
 namespace SistemaVendas.Controllers
 {
