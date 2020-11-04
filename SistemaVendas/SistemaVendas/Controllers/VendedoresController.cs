@@ -69,5 +69,23 @@ namespace SistemaVendas.Controllers
             _vendedorService.ExcluirVendedor(id);
             return RedirectToAction(nameof(Index));
         }
+
+        [HttpGet]
+        public IActionResult Detalhes(int? id)
+        {
+            if(id == null)
+            {
+                return NotFound();
+            }
+
+            var vendedor = _vendedorService.BuscarVendedorId(id.Value);
+
+            if (vendedor == null)
+            {
+                return NotFound();
+            }
+
+            return View(vendedor);
+        }
     }
 }

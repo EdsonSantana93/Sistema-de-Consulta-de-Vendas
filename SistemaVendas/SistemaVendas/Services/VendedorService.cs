@@ -1,4 +1,5 @@
-﻿using SistemaVendas.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using SistemaVendas.Data;
 using SistemaVendas.Models;
 using System;
 using System.Collections.Generic;
@@ -28,7 +29,7 @@ namespace SistemaVendas.Services
         }
 
         public Vendedor BuscarVendedorId(int id) {
-            return _context.Vendedor.FirstOrDefault(vendedor => vendedor.Id == id);            
+            return _context.Vendedor.Include(obj => obj.Departamento).FirstOrDefault(vendedor => vendedor.Id == id);            
         }
 
         public void ExcluirVendedor(int id)
