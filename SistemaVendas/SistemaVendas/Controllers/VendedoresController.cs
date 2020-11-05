@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using SistemaVendas.Models;
 using SistemaVendas.Models.ViewModels;
 using SistemaVendas.Services;
+using SistemaVendas.Services.Exception;
 
 namespace SistemaVendas.Controllers
 {
@@ -87,5 +88,45 @@ namespace SistemaVendas.Controllers
 
             return View(vendedor);
         }
+
+        [HttpGet]
+        public IActionResult Editar(int? id) {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            var vend = _vendedorService.BuscarVendedorId(id.Value);
+            if(vend == null)
+            {
+                return NotFound();
+            }
+
+            List<Departamento> departamentos = _departamentoService.BuscarDepartamentos();
+            VendedorFormViewModel viewModel = new VendedorFormViewModel { Vendedor = vend, Departamentos = departamentos };
+            return View(viewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Editar(int id, Vendedor vendedor)
+        {
+            if (id != vendedor.Id)
+            {
+                return BadRequest();
+            }
+            try
+            {
+                _vendedorService.AtualizarVendedor(vendedor);
+                return RedirectToAction(nameof(Index));
+            } catch (NotFoundException)
+            {
+                return NotFound();
+            }
+            catch (DbConcurrencyException)
+            {
+                return BadRequest();
+            }
+        }
+
     }
 }

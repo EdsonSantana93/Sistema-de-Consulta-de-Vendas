@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SistemaVendas.Data;
 using SistemaVendas.Models;
+using SistemaVendas.Services.Exception;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -37,6 +38,23 @@ namespace SistemaVendas.Services
             var vendedor = _context.Vendedor.Find(id);
             _context.Remove(vendedor);
             _context.SaveChanges();
+        }
+
+        public void AtualizarVendedor(Vendedor vendedor)
+        {
+            if (!_context.Vendedor.Any(x => x.Id == vendedor.Id))
+            {
+                throw new NotFoundException("Vendedor Não encontrado");
+            }
+            try
+            {
+                _context.Update(vendedor);
+                _context.SaveChanges();
+            } 
+            catch(DbUpdateConcurrencyException ex)
+            {
+               throw new DbConcurrencyException("Erro: " + ex.Message);
+            }
         }
     }
 }
