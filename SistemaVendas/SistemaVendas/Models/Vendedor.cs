@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -9,8 +10,13 @@ namespace SistemaVendas.Models
     {
         public int Id { get; set; }
         public string Nome { get; set; }
+        [DataType(DataType.EmailAddress)]
         public string Email { get; set; }
+        [Display(Name = "Data Nascimento")]
+        [DataType(DataType.Date)]
         public DateTime DataNascimento { get; set; }
+        [Display(Name = "Salário Base")]
+        [DisplayFormat(DataFormatString = "{0:F2}")]
         public double SalarioBase { get; set; }
         public Departamento Departamento { get; set; } //Associação um para um
         public int DepartamentoId { get; set; } //Cria uma obrigatoriedade da Chave estrangeira não ser nula
